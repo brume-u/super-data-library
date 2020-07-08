@@ -1,3 +1,8 @@
+""" mysql_arguments_git.py
+
+A file to be filled in with the details for your mysql server and databases.
+"""
+
 import urllib.parse
 username = ""
 password = ""
