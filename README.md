@@ -1,7 +1,7 @@
 # super-data-library
 A Python data library that allows you to download financial time series, store them in databases and use them quickly.
 
-The notebook data_retrieval_testing.ipynb demonstrates how to access the data that it library handles.
+The Jupyter notebook data_retrieval_testing.ipynb demonstrates how to the library works.
 
 The files mysql_arguments_example.py and vantage_data_examp;e.py should have their strings filled with personal keys in order for the library to run on your own systems.
 
