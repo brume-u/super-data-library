@@ -1,10 +1,10 @@
 import pandas as pd
 from datetime import datetime
 
-import vantage_data_2  # Todo: Use conditional imports instead of just importing everything
+import vantage_data  # Todo: Use conditional imports instead of just importing everything
 import mysql_tools
 
-APIs = {"vantage": vantage_data_2}
+APIs = {"vantage": vantage_data}
 DBs = {"mysql": mysql_tools}
 
 class PricePipeline:
