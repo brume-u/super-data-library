@@ -1,7 +1,8 @@
-""" mysql_arguments_example.py
+"""
+ mysql_arguments_example.py
 
 A file to be filled in with the details for your mysql server and databases. Rename to mysql_arguments.py to use with
-the librar.
+the library.
 """
 
 import urllib.parse

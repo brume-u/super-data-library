@@ -1,10 +1,11 @@
-"""vantage_data.py
+"""
+vantage_data_example.py
 
-A file containing methods for retrieving data from the Alpha Vantage API. Fill in your key for the website below.
+A file containing methods for retrieving data from the Alpha Vantage API. Fill in your key from the website below and
+rename to vantage_data.py to use with the library.
 """
 
 
-import pandas
 from datetime import date
 import time
 from alpha_vantage.timeseries import TimeSeries
