@@ -8,7 +8,8 @@ dialect = "mysql"
 driver = "pymysql"
 user = config('MYSQL_USER')
 password = config('MYSQL_PASSWORD')
-password = urllib.parse.quote_plus(password)database = "stocks"
+password = urllib.parse.quote_plus(password)
+database = "stocks"
 host = config('MYSQL_HOST')
 port = config('MYSQL_PORT')
 address = f"{dialect}+{driver}://{user}:{password}@{host}:{port}/{database}"
