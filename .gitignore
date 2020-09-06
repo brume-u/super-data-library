@@ -1,5 +1,3 @@
-vantage_data.py
-mysql_arguments.py
-
 .ipynb_checkpoints
 __pycache__/
+.env

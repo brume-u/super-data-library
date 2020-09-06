@@ -1,29 +1,21 @@
-"""
-vantage_data_example.py
-
-A file containing methods for retrieving data from the Alpha Vantage API. Fill in your key from the website below and
-rename to vantage_data.py to use with the library.
-"""
-
-
 from datetime import date
 import time
+
+from decouple import config
 from alpha_vantage.timeseries import TimeSeries
 
-
-# Fill in your key here. If you do not have one, register with Alpha Vantage at https://www.alphavantage.co/
-key = ""
-
+key = config("VANTAGE_KEY")  # Environment variable stored in .env file
 ts = TimeSeries(key, output_format='pandas')
-
 
 last_date = date.today()
 requests_today = 0
 requests_this_second = 0
 
 def get_data(symbol):
-    """Takes a symbol and retrieves the adjusted close data between the dates listed. This data is output as
-    csv/pandas/json"""
+    """
+    Takes a symbol and retrieves the adjusted close data between the dates listed. This data is output as
+    csv/pandas/json.
+    """
     global key, ts, last_date, requests_today, requests_this_second
     if last_date != date.today():
         last_date = date.today()
@@ -41,4 +33,3 @@ def get_data(symbol):
     series = data["5. adjusted close"]
     series.name = symbol
     return series
-
